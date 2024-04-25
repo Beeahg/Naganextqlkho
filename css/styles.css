@@ -11367,7 +11367,7 @@ body a {
 
 .container {
   width: 938px;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 30px;
   right: 0;
@@ -11455,8 +11455,10 @@ body a {
   transition: all .1s linear;
 }
 
+/*CSS dành cho chiều dài price card: bảng giá QLBH*/
+
 .container .card_inner__content {
-  padding: 20px;
+  padding: 100px;
 }
 
 .container .card_inner__content .price {
