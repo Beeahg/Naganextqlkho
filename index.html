@@ -170,122 +170,18 @@
 		<div class="custom-divider"></div>
 		<!-- Phần tử section đầu tiên sau đường viền -->
 		
-        <!-- Basic features section-->
+        <!-- mô tả tính năng phần mềm QLBH-->
         <section class="bg-light" id="Rental-calc">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-lg-6"> <!--Cot tay TRAI cua form rong 6/12-->
-							<h2 class="display-4 lh-1 mb-0">Tính toán gói thuê</h2>		
-						<!-- Bootstrap core JS -->
-						<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-						<!-- Core theme JS -->
-						<script src="js/scripts.js"></script>
-						<!-- SB Forms JS -->
-						<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-						<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-						<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-						<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
-
-						 <form>				 
-							<div class="mb-3">
-								<label for="productInput" class="form-label">Sản phẩm</label>
-								<style>
-									#productInput {
-									width: 400px; /* Đặt độ rộng cố định textbox là 200 pixels */
-								}
-								</style>
-								<!--<input type="text" id="productInput" class="form-control" style="display:none;" placeholder="Nhập sản phẩm bạn muốn thuê...">--> 
-								<input type="text" id="productInput" class="form-control" placeholder="Nhập sản phẩm bạn muốn thuê...">
-								<!--<select class="form-select" id="productInput">
-									<option selected>Chọn sản phẩm thuê bạn nhé...</option> 
-									<option value="1">Điều hòa Nagakawa 9000 BTU</option>
-									<option value="2">Laptop Dell Inspiron</option>
-									<option value="3">Laptop Mac</option>
-									<!-- Add more options here 
-									</select>--> 
-								<label for="soLuongDuKien" class="form-label">Số lượng sản phẩm bạn muốn thuê(chiếc/bộ)</label>
-								<style>
-									#soLuongDuKien {
-									width: 200px; /* Đặt độ rộng cố định dropdownlist là 200 pixels */
-								}
-								</style>
-								<input type="text"  id="soLuongDuKien" class="form-control" placeholder="Số lượng sản phẩm">
-								
-								<label for="giaMuaDuKien" class="form-label">Đơn giá mua vào dự kiến (VND)</label>
-								<style>
-									#giaMuaDuKien {
-									width: 200px; /* Đặt độ rộng cố định dropdownlist là 200 pixels */
-								}
-								</style>
-								<input type="text" id="giaMuaDuKien" class="form-control" placeholder="Giá mua vào" style="margin-bottom: 10px;">
-								
-								<div class="mb-3">
-									<a class="btn btnH-green btn-custom" role="button" id="refInfoButton" href="https://shop.nagakawa.com.vn/" target="_blank">Tham khảo giá TẠI ĐÂY</a> 
-								</div>
-						
-								<label for="kyHanThue" class="form-label">Kỳ hạn thuê muốn thuê (tháng)</label>
-								<style>
-									#kyHanThue {
-									width: 400px; /* Đặt độ rộng cố định dropdownlist là 200 pixels */
-								}
-								</style>
-								<select class="form-select" id="kyHanThue" onchange="capNhatLabel()">  <!-- xem xet co nen goi ham khi thay doi o day khong--> 
-								  <option selected disabled>Chọn kỳ hạn thuê của Naganext bạn nhé...</option>
-								  <option value="12">12 tháng</option>
-								  <option value="24">24 tháng</option>
-								  <option value="36">36 tháng</option>
-								</select>
-							</div>		
-						</form>
-						<div class="mb-3">
-							<button class="btn btnH-green btn-custom" type="button" id="calculateButton">Tính toán gói thuê</button>
-						</div>
-						
-						
+           <div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<img src="assets/img/QLBHfeature1.png" alt="Offering 1" class="img-fluid">
 					</div>
-
-					<div class="col-lg-6"> <!--Cot tay PHẢI cua form rong 6/12-->
-						<div class="info-box">
-							<label id="tuyChonLabel0" class="form-label"><strong>THÔNG TIN BẠN ĐÃ CHỌN NHƯ SAU</strong></label>	
-							 <p id="selectedProduct">Sản phẩm: </p>
-							 <p id="selectedQuantity">Số lượng (chiếc/bộ): </p>
-							 <p id="selectedPrice">Đơn giá mua vào dự kiến (VND): </p>
-							 <p id="selectedTerm">Kỳ hạn thuê (tháng): </p>
-						</div>
-						
-						<div class="info-box">
-							<label id="tuyChonLabel1" class="form-label"><strong>TÙY CHỌN 1: THUÊ VÀ BẠN MUA LẠI SAU KHI THUÊ</strong></label>	
-							<div class="row">
-								<div class="col-12">
-									<!--<div class="col-sm-8 col-md-6"> --> 
-									<label for="donGiaThueo1" class="form-label">Đơn giá thuê trên 1 tháng (VND)</label>
-									<input type="text" id="donGiaThueo1" class="form-control">
-									<label for="tongGiamualai" class="form-label">Tổng giá mua lại máy (VND)</label>
-									<input type="text" id="tongGiamualai" class="form-control">
-									<label for="tongGiaThueMualai" class="form-label">Tổng giá thuê và mua lại máy (VND)</label>
-									<input type="text" id="tongGiaThueMualai" class="form-control">	
-								</div>
-							</div>
-						</div>	
-						
-						<div class="info-box">
-							<label id="tuyChonLabel2" class="form-label"><strong>TÙY CHỌN 2: HOÀN LẠI MÁY CHO NAGANEXT</strong></label>
-							<div class="row">
-								<div class="col-12">	
-								<!--<div class="col-sm-8 col-md-6">--> 
-								<label for="donGiaThueo2" class="form-label">Đơn giá thuê trên 1 tháng (VND)</label>
-								<input type="text" id="donGiaThueo2" class="form-control">
-								<label for="tongGiaThueo2" class="form-label">Tổng giá thuê (VND)</label> 
-								<input type="text" id="tongGiaThueo2" class="form-control">
-								<label for="productInput5" class="form-label">Ghi chú: do sau thời hạn Thuê bạn trả lại tài sản cho chúng tôi nên không phải trả chi phí mua lại máy như TÙY CHỌN 1</label>
-								</div>		
-							</div>
-						</div>								
-					</div>		
-						
-                </div>
-            </div>
+					<div class="col-lg-6 col-md-6 col-sm-12">
+						<img src="assets/img/QLBHfeature1.png" alt="Offering 2" class="img-fluid">
+					</div>
+				</div>
+			</div>
         </section>
        
 		<!-- Thẻ div cho đường viền -->
