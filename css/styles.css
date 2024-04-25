@@ -11353,7 +11353,7 @@ footer a:hover, footer a:active, footer a:focus {
   color: black;
 }
 
-/*CSS dành cho price card: bảng giá QLBH*/
+/*CSS dành cho price card: bảng giá QLBH
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300');
 
 body {
@@ -11455,7 +11455,7 @@ body a {
   transition: all .1s linear;
 }
 
-/*CSS dành cho chiều dài price card: bảng giá QLBH*/
+/*CSS dành cho chiều dài price card: bảng giá QLBH
 
 .container .card_inner__content {
   padding: 100px;
@@ -11552,4 +11552,4 @@ body a {
   100% {
     transform: rotate(720deg);
   }
-}
+}*/
