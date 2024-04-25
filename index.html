@@ -21,6 +21,16 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
 		<!-- * *                               HoangNA                              * *-->
     </head>
+	<!-- dành cho bảng giá QLBH--> 
+	<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Pricing Table </title>
+    <!--Source URL: https://www.digitaldesignjournal.com/fridays-freebie-clean-simple-pricing-table-psd/-->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="style.css">
+	</head>
+	<!-- kết thúc bảng giá QLBH--> 
+	
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
@@ -285,119 +295,252 @@
 		<!-- Bat dau toi section hien thi bảng giá QLBH--> 
 		<section id="product-display">
 			<div class="container">
-			  <div class="card">
-				<div class="card_inner">
-				  <div class="card_inner__circle">
-					<img src="assets/img/favicon.ico" />
-				  </div>
-				  <div class="card_inner__header">
-					<img src="assets/img/favicon.ico" />
-				  </div>
-				  <div class="card_inner__content">
-					<div class="title">Naganext Gói QLBH 01m</div>
-					<div class="price">$19.99</div>
-					<div class="text">Gồm 8 phân hệ phần mềm Quản lý bảo hành<br/><br/>Tích hợp Topup Nạp tiền thưởng Kích hoạt bảo hành<br/><br/>Hỗ trợ kỹ thuật trong vòng 24h (Email)<br/><br/>Tích hợp Topup thưởng Kích hoạt bảo hành</div>
-				  </div>
-				  <div class="card_inner__cta">
-					<button><span>Mua ngay</span></button>
-				  </div>
-				</div>
-			  </div>
-			  <!-- Các card khác lặp lại tương tự -->
-			</div>
-		</section>	
+				<div class="col-md-10 col-md-offset-1">
+					<table class="pricing-table-box">
+						<tbody>
+							<tr>
+								<td width="30%" class="pricing-table-box-text">
+									<h2>OUR BEST <br/> HOSTING PLANS</h2>
+								</td>
+								<td width="20%">
+									<div class="pricing-table-box-item">
+										<div class="pricing-table-box-item-head color2">
+											<p>Basic</p>
+										</div>
+										<div class="pricing-table-box-item-price color2">
+											<p>$50<span>/ yr</span></p>
+										</div>
+									</div>
+								</td>
+								<td width="20%">
+									<div class="pricing-table-box-item">
+										<div class="pricing-table-box-item-head color2">
+											<p>Advanced</p>
 
-			<!-- Các lựa chọn gói Naganext QLBH 
-			<div class="container">
-			  <div class="card">
-				<div class="card_inner">
-				  <div class="card_inner__circle">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/rocket.png">
-				  </div>
-				  <div class="card_inner__header">
-					<img src="http://www.pixeden.com/media/k2/galleries/343/002-city-vector-background-town-vol2.jpg">
-				  </div>
-				  <div class="card_inner__content">
-					<div class="title">Naganext Gói QLBH 01m</div>
-					<div class="price">VND 750,000/tháng</div>
-					<div class="text">Gồm 8 phân hệ phần mềm Quản lý bảo hành<br/><br/>Tích hợp Topup Nạp tiền thưởng Kích hoạt bảo hành<br/><br/>Hỗ trợ kỹ thuật trong vòng 24h (Email)<br/><br/>Tích hợp Topup thưởng Kích hoạt bảo hành</div>
-				  </div>
-				  <div class="card_inner__cta">
-					<button><span>Mua ngay</span></button>
-				  </div>
+										</div>
+										<div class="pricing-table-box-item-price color2">
+											<p>$120<span>/ yr</span></p>
+
+										</div>
+
+									</div>
+								</td>
+								<td width="20%">
+									<div class="pricing-table-box-item">
+										<div class="pricing-table-box-item-head color2">
+											<p>Pro</p>
+
+										</div>
+										<div class="pricing-table-box-item-price color2">
+											<p>$500<span>/ yr</span></p>
+										</div>
+
+									</div>
+								</td>
+							</tr>
+
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Free Domain</td>
+								<td class="second-row"><span class="glyphicon glyphicon-ok"></span></td>
+								<td class="third-row"><span class="glyphicon glyphicon-ok"></span></td>
+								<td class="fourth-row"><span class="glyphicon glyphicon-ok"></span></td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Websites</td>
+								<td class="second-row">1</td>
+								<td class="third-row">Unlimited</td>
+								<td class="fourth-row">Unlimited</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Bandwidth</td>
+								<td class="second-row">Unlimited</td>
+								<td class="third-row">Unlimited</td>
+								<td class="fourth-row">Unlimited</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Disk Space</td>
+								<td class="second-row">50GB SSD</td>
+								<td class="third-row">150GB SSD</td>
+								<td class="fourth-row">Unlimited</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">MySQL Databases</td>
+								<td class="second-row">2</td>
+								<td class="third-row">10</td>
+								<td class="fourth-row">Unlimited</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Email Addresses</td>
+								<td class="second-row">50</td>
+								<td class="third-row">500</td>
+								<td class="fourth-row">500</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Premium DNS</td>
+								<td class="second-row"><span class="glyphicon glyphicon-remove"></span></td>
+								<td class="third-row"><span class="glyphicon glyphicon-ok"></span></td>
+								<td class="fourth-row"><span class="glyphicon glyphicon-ok"></span></td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">SSL Certificate</td>
+								<td class="second-row"><span class="glyphicon glyphicon-remove"></span></td>
+								<td class="third-row"><span class="glyphicon glyphicon-ok"></span></td>
+								<td class="fourth-row"><span class="glyphicon glyphicon-ok"></span></td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Support</td>
+								<td class="second-row">24/7</td>
+								<td class="third-row">24/7</td>
+								<td class="fourth-row">24/7</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row"></td>
+								<td class="second-row">
+									<div class="pricing-table-box-item-purchase">
+										<button class="btn btn-success btn-block color2">SIGN UP</button>
+									</div>
+								</td>
+								<td class="third-row">
+									<div class="pricing-table-box-item-purchase">
+										<button class="btn btn-success btn-block color2">SIGN UP</button>
+									</div>
+								</td>
+								<td class="fourth-row">
+									<div class="pricing-table-box-item-purchase">
+										<button class="btn btn-success btn-block color2">SIGN UP</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-			  </div>
-			  <!-- Lặp lại tương tự cho các card khác 
+				
+				<div style="height:50px;clear:both;">
+					<!-- Version 2-->
+				</div>
+				
+				<div class="col-md-10 col-md-offset-1">
+					<table class="pricing-table-box">
+						<tbody>
+							<tr>
+								<td width="30%" class="pricing-table-box-text">
+									<h2>OUR BEST <br/> HOSTING PLANS</h2>
+								</td>
+								<td width="20%">
+									<div class="pricing-table-box-item">
+										<div class="pricing-table-box-item-head">
+											<p>Basic</p>
+										</div>
+										<div class="pricing-table-box-item-price">
+											<p>$50<span>/ yr</span></p>
+										</div>
+									</div>
+								</td>
+								<td width="20%">
+									<div class="pricing-table-box-item">
+										<div class="pricing-table-box-item-head">
+											<p>Advanced</p>
+
+										</div>
+										<div class="pricing-table-box-item-price">
+											<p>$120<span>/ yr</span></p>
+
+										</div>
+
+									</div>
+								</td>
+								<td width="20%">
+									<div class="pricing-table-box-item">
+										<div class="pricing-table-box-item-head">
+											<p>Pro</p>
+
+										</div>
+										<div class="pricing-table-box-item-price">
+											<p>$500<span>/ yr</span></p>
+										</div>
+
+									</div>
+								</td>
+							</tr>
+
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Free Domain</td>
+								<td class="second-row"><span class="glyphicon glyphicon-ok"></span></td>
+								<td class="third-row"><span class="glyphicon glyphicon-ok"></span></td>
+								<td class="fourth-row"><span class="glyphicon glyphicon-ok"></span></td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Websites</td>
+								<td class="second-row">1</td>
+								<td class="third-row">Unlimited</td>
+								<td class="fourth-row">Unlimited</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Bandwidth</td>
+								<td class="second-row">Unlimited</td>
+								<td class="third-row">Unlimited</td>
+								<td class="fourth-row">Unlimited</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Disk Space</td>
+								<td class="second-row">50GB SSD</td>
+								<td class="third-row">150GB SSD</td>
+								<td class="fourth-row">Unlimited</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">MySQL Databases</td>
+								<td class="second-row">2</td>
+								<td class="third-row">10</td>
+								<td class="fourth-row">Unlimited</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Email Addresses</td>
+								<td class="second-row">50</td>
+								<td class="third-row">500</td>
+								<td class="fourth-row">500</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Premium DNS</td>
+								<td class="second-row"><span class="glyphicon glyphicon-remove"></span></td>
+								<td class="third-row"><span class="glyphicon glyphicon-ok"></span></td>
+								<td class="fourth-row"><span class="glyphicon glyphicon-ok"></span></td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">SSL Certificate</td>
+								<td class="second-row"><span class="glyphicon glyphicon-remove"></span></td>
+								<td class="third-row"><span class="glyphicon glyphicon-ok"></span></td>
+								<td class="fourth-row"><span class="glyphicon glyphicon-ok"></span></td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row">Support</td>
+								<td class="second-row">24/7</td>
+								<td class="third-row">24/7</td>
+								<td class="fourth-row">24/7</td>
+							</tr>
+							<tr class="pricing-table-box-list">
+								<td class="first-row"></td>
+								<td class="second-row">
+									<div class="pricing-table-box-item-purchase">
+										<button class="btn btn-success btn-block">SIGN UP</button>
+									</div>
+								</td>
+								<td class="third-row">
+									<div class="pricing-table-box-item-purchase">
+										<button class="btn btn-success btn-block">SIGN UP</button>
+									</div>
+								</td>
+								<td class="fourth-row">
+									<div class="pricing-table-box-item-purchase">
+										<button class="btn btn-success btn-block">SIGN UP</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>       
 			</div>
-			<!--
-			<div class="container">
-			  <div class="card">
-				<div class="card_inner">
-				  <div class="card_inner__circle">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/rocket.png">
-				  </div>
-				  <div class="card_inner__header">
-					<img src="http://www.pixeden.com/media/k2/galleries/343/002-city-vector-background-town-vol2.jpg">
-				  </div>
-				  <div class="card_inner__content">
-					<div class="title">Naganext Gói QLBH 02m</div>
-					<div class="price">VND 950,000/tháng</div>
-					<div class="text">Gồm 8 phân hệ phần mềm Quản lý bảo hành trên Web PC/mobile<br/><br/>Tích hợp Topup Nạp tiền thưởng Kích hoạt bảo hành<br/><br/>Hỗ trợ kỹ thuật trong vòng 24h (Email)<br/><br/>Tích hợp Topup thưởng Kích hoạt bảo hành<br/><br/>Kèm Tài khoản App mobile (iOS/Android) Kỹ thuật viên/Thợ bảo hành sửa chữa</div>
-				  </div>
-				  <div class="card_inner__cta">
-					<button><span>Mua ngay</span></button>
-				  </div>
-				</div>
-			  </div>
-			  <!-- Lặp lại tương tự cho các card khác 
-			</div>
-			
-			<div class="container">
-			  <div class="card">
-				<div class="card_inner">
-				  <div class="card_inner__circle">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/rocket.png">
-				  </div>
-				  <div class="card_inner__header">
-					<img src="http://www.pixeden.com/media/k2/galleries/343/002-city-vector-background-town-vol2.jpg">
-				  </div>
-				  <div class="card_inner__content">
-					<div class="title">Naganext Gói QLBH 01y</div>
-					<div class="price">VND 18,000,000/12 tháng</div>
-					<div class="text">Gồm 8 phân hệ phần mềm Quản lý bảo hành trên Web PC/mobile<br/><br/>Tích hợp Topup Nạp tiền thưởng Kích hoạt bảo hành<br/><br/>Hỗ trợ kỹ thuật trong vòng 12h (Email)<br/><br/>Tích hợp Topup thưởng Kích hoạt bảo hành<br/><br/>Kèm Tài khoản App mobile (iOS/Android) Kỹ thuật viên/Thợ bảo hành sửa chữa<br/><br/>Tích hợp phần mềm Contact Center đa kênh của Caresoft cho 5 user</div>
-				  </div>
-				  <div class="card_inner__cta">
-					<button><span>Mua ngay</span></button>
-				  </div>
-				</div>
-			  </div>
-			  <!-- Lặp lại tương tự cho các card khác 
-			</div>
-			
-			<div class="container">
-			  <div class="card">
-				<div class="card_inner">
-				  <div class="card_inner__circle">
-					<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/rocket.png">
-				  </div>
-				  <div class="card_inner__header">
-					<img src="http://www.pixeden.com/media/k2/galleries/343/002-city-vector-background-town-vol2.jpg">
-				  </div>
-				  <div class="card_inner__content">
-					<div class="title">Naganext Gói QLBH Turnkey</div>
-					<div class="price">Liên hệ để có Khảo sát và Báo giá</div>
-					<div class="text">Gồm 8 phân hệ phần mềm Quản lý bảo hành và phần mềm May đo riêng cho Doanh nghiệp của bạn, chạy đa kênh Web PC/mobile, App iOS, Android cho cả smartphone và tablet<br/><br/>Tích hợp Topup Nạp tiền thưởng Kích hoạt bảo hành<br/><br/>Hỗ trợ kỹ thuật trong vòng 4h đa kênh (Chat, Email, Online Ticket System)<br/><br/>Tích hợp Topup thưởng Kích hoạt bảo hành<br/><br/>Kèm Tài khoản App mobile (iOS/Android) Kỹ thuật viên/Thợ bảo hành sửa chữa<br/><br/>Tích hợp phần mềm Contact Center đa kênh của Caresoftbr/><br/>Dashboard hiển thị dữ liệu Thời gian thực (Realtime)</div>
-				  </div>
-				  <div class="card_inner__cta">
-					<button><span>Mua ngay</span></button>
-				  </div>
-				</div>
-			  </div>
-			  <!-- Lặp lại tương tự cho các card khác 
-			</div> 
-		  
 		</section>
-			<!-- Ket thuc  section hien thi san pham-->
+			<!-- Ket thuc  section hien thi san pham bảng giá QLBH-->
 		
 		<!-- Thẻ div cho đường viền -->
 		<div class="custom-divider"></div>
@@ -533,5 +676,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-pjL9wGBCRn1Vxla2hVnZL182soeGCI8tFT/3x8tSB/ZqFVDBn5/4TfRnhL9fFbto" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="js/rental_func.js"></script>
+		 <!-- * * dành cho hiển thị bảng giá QLBH-->
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
     </body>
 </html>

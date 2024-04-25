@@ -11354,204 +11354,179 @@ footer a:hover, footer a:active, footer a:focus {
 }
 
 /*CSS dành cho price card: bảng giá QLBH */
-@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300');
+/* ---------------------------------------------------
+	Source URL: https://www.digitaldesignjournal.com/fridays-freebie-clean-simple-pricing-table-psd/
+ ----------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
 
 body {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
-body a {
-  text-decoration: none;
-  color: white;
+.pricing-table-box {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+	width: 100%;
 }
 
-.container {
-  width: 938px;
-  position: relative;
-  top: 50%;
-  left: 30px;
-  right: 0;
-  transform: translateY(-50%);
-  margin: auto;
+.pricing-table-box td {
+    padding: 0px;
+    border-left: 1px solid transparent;
 }
 
-.container .card {
-  margin: 0 auto;
-  display: inline-block;
-  margin-right: 30px;
-  transform: scale(0);
-  width: 280px;
-  text-align: center;
-  position: relative;
-  transition: all .2s;
-  cursor: pointer;
-  opacity: 0.5;
-  box-shadow: 0px 17px 46px -10px #777777;
-  height: 470px;
-  border-radius: 14px;
-  animation: intro 1s forwards;
+.pricing-table-box .pricing-table-box-list td {
+    padding: 10px 8px;
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+    background: #F9F9F9;
 }
 
-.container .card:nth-of-type(1) {
-  background: linear-gradient(45deg, #c96881 0%, #f7b695 100%);
+.pricing-table-box .pricing-table-box-list .glyphicon-ok {
+    color: #68AF27;
 }
 
-.container .card:nth-of-type(2) {
-  background: linear-gradient(45deg, #6B6ECC 0%, #89BFDF 100%);
+.pricing-table-box .pricing-table-box-list .glyphicon-remove {
+    color: #C22439;
 }
 
-.container .card:nth-of-type(3) {
-  background: linear-gradient(45deg, #81B77B 0%, #A3E3C3 100%);
+.pricing-table-box .pricing-table-box-list td:first-child {
+    font-weight: 400;
+    text-align: left;
+    border-left: 0px;
+    font-size: 14px;
+    color: #060606;
 }
 
-.container .card:hover .card_inner__header img {
-  left: -50px;
-  transition: all 3.4s linear;
+.pricing-table-box .pricing-table-box-list:nth-child(2n) td {
+    background: #F2F2F2;
 }
 
-.container .card:hover .card_inner__cta button {
-  transform: scale(1);
+.pricing-table-box .pricing-table-box-text h2 {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: #8a8a8a;
 }
 
-.container .card:hover {
-  opacity: 1;
+.pricing-table-box .pricing-table-box-text p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: #666;
+    margin-top: 10px;
 }
 
-.container .card_inner__circle {
-  overflow: hidden;
-  width: 70px;
-  position: absolute;
-  background: #F1F0ED;
-  z-index: 10;
-  height: 70px;
-  border-radius: 100px;
-  left: 0;
-  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.28);
-  right: 0;
-  margin: auto;
-  border: 4px solid rgb(255, 255, 255);
-  top: 82px;
+.pricing-table-box .pricing-table-box-item {
+    color: #FFF;
 }
 
-.container .card_inner__circle img {
-  height: 26px;
-  position: relative;
-  top: 17px;
-  transition: all .2s;
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-head {
+    padding: 10px 5px;
+    text-align: center;
+    background-color: #2ac4ea!important;
+    box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -moz-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -webkit-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -o-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
 }
 
-.container .card_inner__header {
-  height: 120px;
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
-  overflow: hidden;
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-head p {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
 }
 
-.container .card_inner__header img {
-  width: 120%;
-  position: relative;
-  top: -30px;
-  left: 0;
-  transition: all .1s linear;
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price {
+    padding: 15px 10px;
+    text-align: center;
+    color: #009AD7;
+    background: #F9F9F9;
 }
 
-/*CSS dành cho chiều dài price card: bảng giá QLBH*/
-
-.container .card_inner__content {
-  padding: 100px;
-  min-height: 200px; /* Adjust the min-height as needed */
-  overflow: visible; /* Ensure it's not hidden */
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price p {
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 0px;
 }
 
-.container .card_inner__content .price {
-  color: white;
-  font-weight: 800;
-  font-size: 70px;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price p span {
+    font-size: 12px;
+    font-weight: 300;
 }
 
-.container .card_inner__content .text {
-  color: rgba(255, 255, 255, 0.60);
-  font-weight: 100;
-  margin-top: 20px;
-  font-size: 13px;
-  line-height: 16px;
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price > span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #009AD7
 }
 
-.container .card_inner__content .title {
-  font-weight: 800;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.64);
-  margin-top: 40px;
-  font-size: 25px;
-  letter-spacing: 1px;
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-purchase {
+    padding: 10px 5px;
+    background: #FFF;
 }
 
-.container .card_inner__cta {
-  position: absolute;
-  bottom: -24px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 200px;
+.pricing-table-box-item-purchase .btn {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    background-color: #2ac4ea;
+    box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -moz-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -webkit-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    -o-box-shadow: 0 -2px rgba(0, 0, 0, .1) inset;
+    border: none;
+    padding: 11px 0;
 }
 
-.container .card_inner__cta button {
-  padding: 16px;
-  box-shadow: 0px 0px 40px 4px #F76583, 0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
-  width: 100%;
-  background: linear-gradient(270deg, #fe5e7d 0%, #e5375b 100%);
-  border: none;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  color: white;
-  outline: none;
-  font-size: 20px;
-  border-radius: 6px;
-  transform: scale(0.94);
-  cursor: pointer;
-  transition: box-shadow 0.3s, transform 0.3s 0.1s;
+.btn-success.active.focus,
+.btn-success.active:focus,
+.btn-success.active:hover,
+.btn-success:active.focus,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.open>.dropdown-toggle.btn-success.focus,
+.open>.dropdown-toggle.btn-success:focus,
+.open>.dropdown-toggle.btn-success:hover {
+    color: inherit!important;
+    background-color: inherit!important;
+    border-color: inherit!important;
 }
 
-.container .card_inner__cta button span {
-  text-shadow: 0px 4px 18px #BA3F57;
+.pricing-table-box .pricing-table-box-list:nth-child(1n) td.second-row {
+    background: #F2F2F2;
 }
 
-.container .card_inner__cta button:hover {
-  box-shadow: 0px 0px 60px 8px #F76583, 0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
+.pricing-table-box .pricing-table-box-list:nth-child(2n) td.second-row {
+    background: #dedede;
 }
 
-@keyframes intro {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
+.pricing-table-box .pricing-table-box-list:nth-child(1n) td.fourth-row {
+    background: #F2F2F2;
 }
 
-@keyframes launch {
-  0% {
-    left: 1px;
-  }
-  100% {
-    top: 1px;
-  }
+.pricing-table-box .pricing-table-box-list:nth-child(2n) td.fourth-row {
+    background: #dedede;
 }
 
-@keyframes fly {
-  0% {
-    left: 0px;
-  }
-  100% {
-    top: 0px;
-  }
+
+/* Color Version 2*/
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-head.color2 {
+    background-color: #f6653c!important;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(720deg);
-  }
-}*/
+.pricing-table-box-item-purchase .btn.color2 {
+    background-color: #f6653c!important;
+}
+
+.pricing-table-box .pricing-table-box-item .pricing-table-box-item-price.color2 {
+    color: #f6653c!important;
+}
