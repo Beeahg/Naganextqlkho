@@ -11472,6 +11472,8 @@ body {
 .pricing-table-box .pricing-table-box-item .pricing-table-box-item-purchase {
     padding: 10px 5px;
     background: #FFF;
+	font-size: 14px; /* Điều chỉnh kích thước chữ trên nút nhấn MUA NGAY */
+	width: 120px; /* Điều chỉnh chiều rộng của nút nhấn  MUA NGAY */
 }
 
 .pricing-table-box-item-purchase .btn {
