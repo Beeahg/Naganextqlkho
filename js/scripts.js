@@ -30,8 +30,17 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
+	// Thu gọn Menu, tác động tới việc khi duyệt web trên mobile, nhấn và thu lại nút Menu
+    // Code for handling navbar collapse on item click for mobile view
+    var navbarCollapse = document.getElementById('navbarResponsive');
+    document.querySelectorAll('#navbarResponsive .nav-link').forEach(function (element) {
+        element.addEventListener('click', function () {
+            if (navbarCollapse.classList.contains('show')) {
+                navbarToggler.click();
+            }
+        });
+    });
 	
   //khởi tạo DateTimePicker 
 	//$('#datetimepicker').datetimepicker();
-
 });
