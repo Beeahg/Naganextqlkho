@@ -10834,7 +10834,8 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #2937f0, #9f1ae2) !important;
+  /*background: linear-gradient(45deg, #2937f0, #9f1ae2) !important; */
+  background: linear-gradient(to right, #009966, #008445);
   margin-top: 20px;  /* Thêm khoảng cách trên cho footer */  
   /*background-image: url('assets/img/Offerings.png'); /* Thay 'path_to_your_image.jpg' bằng đường dẫn thực tế đến ảnh của bạn 
   background-size: cover; /* Đảm bảo ảnh bao phủ toàn bộ phần tử 
