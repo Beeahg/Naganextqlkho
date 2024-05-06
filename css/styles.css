@@ -11332,7 +11332,7 @@ footer a:hover, footer a:active, footer a:focus {
   position: relative;
   z-index: 10; /* Hoặc một giá trị cao hơn nếu cần */
   height: 25px;
-  background: linear-gradient(to right, #ff00cc, #333399);
+  background:  linear-gradient(to right, #009966, #008445); /*#ff00cc, #333399);*/
   width: 100%;
   margin-bottom: 0; /* Giảm khoảng cách phía dưới của đường viền */
 }
@@ -11533,3 +11533,6 @@ body {
     color: #f6653c!important;
 }
 
+body, body * {
+    font-family: 'Montserrat', sans-serif !important;
+}
